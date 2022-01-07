@@ -3,11 +3,6 @@
     "require": {
         "laravel/framework": "^8.78"
     },
-    "autoload": {
-        "psr-4": {
-            "Hungsuu\\KafkaQueue\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "tuanhung",
