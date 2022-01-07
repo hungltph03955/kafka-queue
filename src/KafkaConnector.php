@@ -1,7 +1,6 @@
 <?php
 namespace Kafka;
 
-use App\Queues\KafkaQueue;
 use Illuminate\Queue\Connectors\ConnectorInterface;
 
 class KafkaConnector implements ConnectorInterface {
