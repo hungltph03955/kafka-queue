@@ -40,10 +40,10 @@ class KafkaQueue extends Queue implements QueueContract {
                     $job->handle();
                     break;
                 case RD_KAFKA_RESP_ERR__PARTITION_EOF:
-                    var_dump("No more message; will wait for more\n");
+                    var_dump("No more messages; will wait for more\n");
                     break;
                 case RD_KAFKA_RESP_ERR__TIMED_OUT:
-                    var_dump("Time out\n");
+                    var_dump("Timed out\n");
                     break;
                 default:
                     throw new \Exception($message->errstr(), $message->err);
